@@ -21,16 +21,14 @@ watch(
   <header class="sticky top-0 z-50">
     <div class="border-b border-ink-900/8 bg-white/80 backdrop-blur-xl">
       <div class="mx-auto flex h-18 max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
-        <NuxtLink to="/" class="flex items-center gap-2.5">
-          <span
-            class="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-brand-400 to-brand-600 shadow-glow"
-          >
-            <svg viewBox="0 0 24 24" class="h-5 w-5 text-ink-950" fill="currentColor">
+        <NuxtLink to="/" class="flex items-center gap-3">
+          <span class="flex h-9 w-9 items-center justify-center rounded-md bg-ink-900">
+            <svg viewBox="0 0 24 24" class="h-4.5 w-4.5 text-brand-500" fill="currentColor">
               <path d="M3 11.2 12 4l9 7.2V20a1 1 0 0 1-1 1h-4.5a1 1 0 0 1-1-1v-4.5h-3V20a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V11.2Z" />
             </svg>
           </span>
-          <span class="text-lg font-bold tracking-tight text-ink-900">
-            Garagenpark <span class="text-gradient">Musterort</span>
+          <span class="font-heading text-sm font-bold uppercase tracking-[0.1em] text-ink-900">
+            Garagenpark Musterort
           </span>
         </NuxtLink>
 
@@ -39,17 +37,14 @@ watch(
             v-for="link in links"
             :key="link.label"
             :to="link.to"
-            class="text-sm font-medium text-ink-500 transition hover:text-ink-900"
+            class="text-xs font-semibold uppercase tracking-wide text-ink-500 transition hover:text-ink-900"
           >
             {{ link.label }}
           </NuxtLink>
         </nav>
 
         <div class="hidden md:block">
-          <NuxtLink
-            to="/preise#kontakt"
-            class="inline-flex items-center rounded-full bg-brand-500 px-5 py-2.5 text-sm font-semibold text-ink-950 shadow-glow transition hover:bg-brand-400"
-          >
+          <NuxtLink to="/preise#kontakt" class="btn-primary !px-5 !py-2.5 text-sm">
             Jetzt anfragen
           </NuxtLink>
         </div>
@@ -89,10 +84,7 @@ watch(
           >
             {{ link.label }}
           </NuxtLink>
-          <NuxtLink
-            to="/preise#kontakt"
-            class="mt-2 inline-flex items-center justify-center rounded-full bg-brand-500 px-5 py-2.5 text-sm font-semibold text-ink-950"
-          >
+          <NuxtLink to="/preise#kontakt" class="btn-primary mt-2 !py-2.5 text-sm">
             Jetzt anfragen
           </NuxtLink>
         </nav>

@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import "@fontsource-variable/inter/standard.css";
+@import "@fontsource-variable/space-grotesk/wght.css";
 
 @theme {
   /* Brand accent — warm amber, references garage-door / warning-stripe tones */
@@ -27,9 +29,10 @@
   --color-ink-900: #16181d;
   --color-ink-950: #0a0b0e;
 
-  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-heading: "Space Grotesk Variable", "Inter Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
-  --shadow-glow: 0 1px 2px rgba(247, 144, 9, 0.2), 0 6px 20px -6px rgba(247, 144, 9, 0.35);
+  --shadow-glow: 0 1px 2px rgba(10, 11, 14, 0.15), 0 8px 20px -6px rgba(10, 11, 14, 0.25);
   --shadow-card: 0 1px 2px 0 rgba(16, 24, 32, 0.03), 0 1px 1px 0 rgba(16, 24, 32, 0.02);
   --shadow-card-hover: 0 8px 24px -8px rgba(16, 24, 32, 0.12);
 
@@ -52,7 +55,16 @@
 
   body {
     @apply bg-white text-ink-900 antialiased;
+    font-family: var(--font-sans);
     font-feature-settings: "ss01" on, "cv01" on;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.015em;
   }
 
   ::selection {
@@ -62,16 +74,33 @@
 
 @layer components {
   .glass-panel {
-    @apply relative rounded-2xl border border-ink-900/6 bg-white transition-shadow;
+    @apply relative rounded-md border border-ink-900/8 bg-white transition-shadow;
     box-shadow: var(--shadow-card);
   }
 
-  .glass-panel-frosted {
-    @apply relative rounded-2xl border border-white/50 bg-white/85 backdrop-blur-md;
-    box-shadow: var(--shadow-card);
+  .eyebrow {
+    @apply inline-flex items-center gap-2.5 text-xs font-semibold uppercase tracking-[0.14em] text-ink-500;
   }
 
-  .text-gradient {
-    @apply bg-gradient-to-r from-brand-600 via-brand-700 to-brand-800 bg-clip-text text-transparent;
+  .eyebrow-index {
+    @apply text-brand-600;
+    font-family: var(--font-heading);
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center rounded-md px-7 py-3.5 text-sm font-semibold transition;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-md bg-ink-900 px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-ink-800;
+    box-shadow: var(--shadow-glow);
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-md border border-ink-900/15 bg-transparent px-7 py-3.5 text-sm font-semibold text-ink-900 transition hover:bg-ink-900/5;
+  }
+
+  .btn-secondary-inverse {
+    @apply inline-flex items-center justify-center rounded-md border border-white/25 bg-transparent px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-white/10;
   }
 }

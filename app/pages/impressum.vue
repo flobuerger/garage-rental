@@ -4,7 +4,7 @@ useSeoMeta({ title: 'Impressum — Garagenpark Musterort' })
 
 <template>
   <section class="mx-auto max-w-3xl px-4 py-20 sm:px-6 lg:px-8">
-    <h1 class="text-3xl font-extrabold tracking-tight text-ink-900">Impressum</h1>
+    <h1 class="text-3xl font-bold tracking-tight text-ink-900">Impressum</h1>
     <div class="mt-8 space-y-8 text-sm leading-relaxed text-ink-600">
       <p class="rounded-xl border border-brand-500/30 bg-brand-50 p-4 text-brand-800">
         Platzhaltertext — bitte durch die vollständigen, rechtlich korrekten

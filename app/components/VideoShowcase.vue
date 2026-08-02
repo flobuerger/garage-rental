@@ -18,8 +18,8 @@ function togglePlay() {
   <section id="video" class="mx-auto max-w-7xl scroll-mt-24 px-4 py-24 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
       <div>
-        <span class="text-xs font-semibold uppercase tracking-wider text-brand-600">Video-Rundgang</span>
-        <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-ink-900 sm:text-4xl">
+        <span class="eyebrow"><span class="eyebrow-index">06</span> Video-Rundgang</span>
+        <h2 class="mt-3 text-3xl font-bold tracking-tight text-ink-900 sm:text-4xl">
           Wirf einen Blick hinein
         </h2>
         <p class="mt-4 text-ink-500">
@@ -47,7 +47,7 @@ function togglePlay() {
           loop
           muted
           playsinline
-          poster="/images/garage-02.svg"
+          poster="https://images.unsplash.com/photo-1609915395444-e9632e899ad9?q=80&w=1200&auto=format&fit=crop"
           @click="togglePlay"
         >
           <source src="/videos/rundgang.mp4" type="video/mp4" />

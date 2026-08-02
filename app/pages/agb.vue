@@ -4,7 +4,7 @@ useSeoMeta({ title: 'AGB — Garagenpark Musterort' })
 
 <template>
   <section class="mx-auto max-w-3xl px-4 py-20 sm:px-6 lg:px-8">
-    <h1 class="text-3xl font-extrabold tracking-tight text-ink-900">
+    <h1 class="text-3xl font-bold tracking-tight text-ink-900">
       Allgemeine Geschäftsbedingungen
     </h1>
     <div class="mt-8 space-y-8 text-sm leading-relaxed text-ink-600">

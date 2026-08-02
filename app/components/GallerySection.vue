@@ -1,20 +1,21 @@
 <script setup lang="ts">
 const photos = [
-  { src: '/images/garage-01.svg', label: 'Einheit 01 · Einzelgarage', span: 'sm:row-span-2' },
-  { src: '/images/garage-02.svg', label: 'Einheit 02 · Doppelgarage', span: '' },
-  { src: '/images/garage-03.svg', label: 'Einheit 03 · Einzelgarage', span: '' },
-  { src: '/images/garage-04.svg', label: 'Einheit 04 · Doppelgarage', span: '' },
-  { src: '/images/garage-05.svg', label: 'Reihe B · Abendstimmung', span: 'sm:row-span-2' },
-  { src: '/images/garage-06.svg', label: 'Reihe C · Zufahrt', span: '' },
+  { src: 'https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?q=80&w=1000&auto=format&fit=crop', label: 'Einheit 01 · Einzelgarage', span: 'sm:row-span-2' },
+  { src: 'https://images.unsplash.com/photo-1696992812596-3c0d4d2d1299?q=80&w=800&auto=format&fit=crop', label: 'Einheit 02 · Doppelgarage', span: '' },
+  { src: 'https://images.unsplash.com/photo-1617782674367-341cf5f527c9?q=80&w=800&auto=format&fit=crop', label: 'Einheit 03 · Einzelgarage', span: '' },
+  { src: 'https://images.unsplash.com/photo-1523809040961-500fcd60697a?q=80&w=800&auto=format&fit=crop', label: 'Einheit 04 · Doppelgarage', span: '' },
+  { src: 'https://images.unsplash.com/photo-1541737949652-27149c8e786d?q=80&w=1000&auto=format&fit=crop', label: 'Reihe B · Abendstimmung', span: 'sm:row-span-2' },
+  { src: 'https://images.unsplash.com/photo-1628744448839-a475cc0e90c3?q=80&w=800&auto=format&fit=crop', label: 'Reihe C · Zufahrt', span: '' },
 ]
 </script>
 
 <template>
   <section id="galerie" class="mx-auto max-w-7xl scroll-mt-24 px-4 py-24 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-2xl text-center">
-      <h2 class="text-3xl font-extrabold tracking-tight text-ink-900 sm:text-4xl">Impressionen der Anlage</h2>
+      <span class="eyebrow justify-center"><span class="eyebrow-index">05</span> Impressionen</span>
+      <h2 class="mt-3 text-3xl font-bold tracking-tight text-ink-900 sm:text-4xl">Die Anlage im Überblick</h2>
       <p class="mt-4 text-ink-500">
-        Ein Blick auf unsere Garagenreihen. Platzhalterbilder — echte Fotos folgen nach Absprache.
+        Ein Blick auf unsere Garagenreihen. Beispielfotos — echte Aufnahmen der Anlage folgen nach Absprache.
       </p>
     </div>
 
@@ -22,7 +23,7 @@ const photos = [
       <figure
         v-for="photo in photos"
         :key="photo.src"
-        class="group relative overflow-hidden rounded-2xl border border-ink-900/8 shadow-sm"
+        class="group relative overflow-hidden rounded-lg border border-ink-900/8"
         :class="photo.span"
       >
         <img

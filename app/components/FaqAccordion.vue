@@ -11,7 +11,7 @@ function toggle(i: number) {
 </script>
 
 <template>
-  <div class="divide-y divide-ink-900/8 overflow-hidden rounded-2xl border border-ink-900/8 bg-white shadow-sm">
+  <div class="divide-y divide-ink-900/8 overflow-hidden rounded-md border border-ink-900/10 bg-white">
     <div v-for="(item, i) in items" :key="item.q">
       <button
         type="button"
@@ -22,7 +22,7 @@ function toggle(i: number) {
         <span class="text-sm font-semibold text-ink-900 sm:text-base">{{ item.q }}</span>
         <svg
           viewBox="0 0 24 24"
-          class="h-5 w-5 shrink-0 text-brand-600 transition-transform duration-200"
+          class="h-5 w-5 shrink-0 text-ink-900 transition-transform duration-200"
           :class="{ 'rotate-45': openIndex === i }"
           fill="none"
           stroke="currentColor"

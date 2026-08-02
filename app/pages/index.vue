@@ -9,9 +9,13 @@ useSeoMeta({
 <template>
   <div>
     <HeroSection />
+    <StatsSection />
+    <SizeGuideSection />
     <FeatureGrid />
+    <StepsSection />
     <GallerySection />
     <VideoShowcase />
+    <TestimonialsSection />
     <SitePlanSection />
     <CtaBanner />
   </div>
