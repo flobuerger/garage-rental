@@ -1,0 +1,106 @@
+@import "tailwindcss";
+@import "@fontsource-variable/inter/standard.css";
+@import "@fontsource-variable/space-grotesk/wght.css";
+
+@theme {
+  /* Brand accent — warm amber, references garage-door / warning-stripe tones */
+  --color-brand-50: #fffaeb;
+  --color-brand-100: #fef0c7;
+  --color-brand-200: #fedf89;
+  --color-brand-300: #fec84b;
+  --color-brand-400: #fdb022;
+  --color-brand-500: #f79009;
+  --color-brand-600: #dc6803;
+  --color-brand-700: #b54708;
+  --color-brand-800: #93370d;
+  --color-brand-900: #7a2e0e;
+  --color-brand-950: #451a03;
+
+  /* Deep neutral base for the dark theme */
+  --color-ink-50: #f5f6f7;
+  --color-ink-100: #e5e7ea;
+  --color-ink-200: #cacdd3;
+  --color-ink-300: #a3a9b3;
+  --color-ink-400: #767e8c;
+  --color-ink-500: #575f6c;
+  --color-ink-600: #434955;
+  --color-ink-700: #363b45;
+  --color-ink-800: #23262d;
+  --color-ink-900: #16181d;
+  --color-ink-950: #0a0b0e;
+
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-heading: "Space Grotesk Variable", "Inter Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  --shadow-glow: 0 1px 2px rgba(10, 11, 14, 0.15), 0 8px 20px -6px rgba(10, 11, 14, 0.25);
+  --shadow-card: 0 1px 2px 0 rgba(16, 24, 32, 0.03), 0 1px 1px 0 rgba(16, 24, 32, 0.02);
+  --shadow-card-hover: 0 8px 24px -8px rgba(16, 24, 32, 0.12);
+
+  --animate-marquee: marquee 28s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-ink-900 antialiased;
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01" on, "cv01" on;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.015em;
+  }
+
+  ::selection {
+    @apply bg-brand-400/30 text-ink-900;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply relative rounded-md border border-ink-900/8 bg-white transition-shadow;
+    box-shadow: var(--shadow-card);
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2.5 text-xs font-semibold uppercase tracking-[0.14em] text-ink-500;
+  }
+
+  .eyebrow-index {
+    @apply text-brand-600;
+    font-family: var(--font-heading);
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center rounded-md px-7 py-3.5 text-sm font-semibold transition;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-md bg-ink-900 px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-ink-800;
+    box-shadow: var(--shadow-glow);
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-md border border-ink-900/15 bg-transparent px-7 py-3.5 text-sm font-semibold text-ink-900 transition hover:bg-ink-900/5;
+  }
+
+  .btn-secondary-inverse {
+    @apply inline-flex items-center justify-center rounded-md border border-white/25 bg-transparent px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-white/10;
+  }
+}

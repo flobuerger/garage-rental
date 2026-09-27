@@ -7,7 +7,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Garagenpark Musterort — Garagen mieten',
+      title: 'Garagenpark Marchtrenk — Garagen mieten',
       htmlAttrs: { lang: 'de' },
       meta: [
         { charset: 'utf-8' },
@@ -15,7 +15,7 @@ export default defineNuxtConfig({
         {
           name: 'description',
           content:
-            'Garagen zur Miete in Musterort — sicher, trocken, videoüberwacht. Verschiedene Größen, faire Preise, sofort verfügbar.',
+            'Einzelgarage zur Miete in Marchtrenk — sicher, trocken, videoüberwacht, Zufahrt durch Schranken gesichert. Sofort verfügbar.',
         },
         { name: 'theme-color', content: '#ffffff' },
       ],

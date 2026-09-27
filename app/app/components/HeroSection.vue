@@ -7,7 +7,7 @@
             <svg viewBox="0 0 24 24" class="h-3.5 w-3.5 text-brand-500" fill="currentColor">
               <path d="M3 11.2 12 4l9 7.2V20a1 1 0 0 1-1 1h-4.5a1 1 0 0 1-1-1v-4.5h-3V20a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V11.2Z" />
             </svg>
-            <span class="text-xs font-semibold text-ink-700">Neu in Marchtrenk</span>
+            <span class="text-xs font-semibold text-ink-700">Neu in Marchtrenk seit 2024</span>
           </span>
 
           <h1 class="mt-5 text-4xl font-bold tracking-tight text-ink-900 sm:text-5xl lg:text-[3.4rem] lg:leading-[1.05]">
