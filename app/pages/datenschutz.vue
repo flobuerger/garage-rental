@@ -50,7 +50,10 @@ useSeoMeta({ title: 'Datenschutzerklärung — garagen-reich' })
         <p class="mt-2">
           Wenn Sie uns per E-Mail, Telefon oder über das Kontaktformular auf der Website
           kontaktieren, verarbeiten wir Ihre mitgeteilten Kontaktdaten und den Inhalt der Anfrage, um
-          diese zu beantworten und gegebenenfalls einen Mietvertrag vorzubereiten. Beim Absenden des
+          diese zu beantworten und gegebenenfalls einen Mietvertrag vorzubereiten. Das Kontaktformular
+          übermittelt Name, E-Mail-Adresse und Nachricht per E-Mail an office@garagen-reich.at; die
+          Daten werden dabei über den Webspace des Hosters (hosttech) verarbeitet und nicht in einer
+          Datenbank gespeichert. Beim Absenden des
           Kontaktformulars können außerdem technisch erforderliche Verbindungsdaten anfallen; für
           deren Verarbeitung gelten die Angaben zum Website-Besuch in Abschnitt 2. Soweit Ihre Anfrage
           auf einen Vertrag gerichtet ist, beruht die Verarbeitung auf Art. 6 Abs. 1 lit. b DSGVO; bei

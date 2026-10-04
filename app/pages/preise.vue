@@ -49,11 +49,36 @@ const faqs = [
   },
 ]
 
-const form = reactive({ name: '', email: '', message: '' })
+const form = reactive({ name: '', email: '', message: '', website: '' })
 const submitted = ref(false)
+const sending = ref(false)
+const errorMsg = ref('')
+const startedAt = Date.now()
 
-function handleSubmit() {
-  submitted.value = true
+async function handleSubmit() {
+  if (sending.value) return
+  sending.value = true
+  errorMsg.value = ''
+  try {
+    const body = new FormData()
+    body.append('name', form.name)
+    body.append('email', form.email)
+    body.append('message', form.message)
+    body.append('website', form.website)
+    body.append('started', String(startedAt))
+    const res = await fetch('/kontakt.php', { method: 'POST', body })
+    const data = await res.json().catch(() => null)
+    if (!res.ok || !data?.ok) {
+      throw new Error(data?.error || 'Senden fehlgeschlagen.')
+    }
+    submitted.value = true
+  } catch (e) {
+    errorMsg.value =
+      (e instanceof Error && e.message ? e.message + ' ' : '') +
+      'Bitte versuche es erneut oder schreibe uns direkt an office@garagen-reich.at.'
+  } finally {
+    sending.value = false
+  }
 }
 </script>
 
@@ -245,9 +270,21 @@ function handleSubmit() {
                 gelesen und bin mit der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage einverstanden.
               </label>
             </div>
+            <input
+              v-model="form.website"
+              type="text"
+              name="website"
+              tabindex="-1"
+              autocomplete="off"
+              aria-hidden="true"
+              class="absolute -left-[9999px] h-0 w-0 opacity-0"
+            />
+            <p v-if="errorMsg" class="sm:col-span-2 rounded-md border border-red-300 bg-red-50 p-3 text-sm text-red-700" role="alert">
+              {{ errorMsg }}
+            </p>
             <div class="sm:col-span-2">
-              <button type="submit" class="btn-primary w-full sm:w-auto">
-                Anfrage senden
+              <button type="submit" class="btn-primary w-full sm:w-auto" :disabled="sending">
+                {{ sending ? 'Wird gesendet …' : 'Anfrage senden' }}
               </button>
             </div>
           </form>
