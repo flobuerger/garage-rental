@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const year = new Date().getFullYear()
+const { reopen } = useConsent()
 </script>
 
 <template>
@@ -14,7 +15,7 @@ const year = new Date().getFullYear()
                 <path d="M3 11.2 12 4l9 7.2V20a1 1 0 0 1-1 1h-4.5a1 1 0 0 1-1-1v-4.5h-3V20a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V11.2Z" />
               </svg>
             </span>
-            <span class="font-heading text-sm font-bold uppercase tracking-[0.1em] text-ink-900">Garagenpark Marchtrenk</span>
+            <span class="font-heading text-sm font-bold uppercase tracking-[0.1em] text-ink-900">garagen-reich</span>
           </div>
           <p class="mt-4 max-w-sm text-sm leading-relaxed text-ink-500">
             Zur Miete in Marchtrenk. Einheitliche Größe, faire Miete inklusive Betriebskosten —
@@ -44,11 +45,11 @@ const year = new Date().getFullYear()
           <ul class="mt-4 space-y-2.5 text-sm text-ink-500">
             <li>Roseggerstraße, 4614 Marchtrenk</li>
             <li>
-              <a href="tel:+43000000000" class="hover:text-ink-900">+43 000 000 000</a>
+              <a href="tel:+4367763475223" class="hover:text-ink-900">+43 677 63475223</a>
             </li>
             <li>
-              <a href="mailto:info@garagenpark-marchtrenk.at" class="hover:text-ink-900">
-                info@garagenpark-marchtrenk.at
+              <a href="mailto:office@garagen-reich.at" class="hover:text-ink-900">
+                office@garagen-reich.at
               </a>
             </li>
           </ul>
@@ -56,11 +57,12 @@ const year = new Date().getFullYear()
       </div>
 
       <div class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-ink-900/8 pt-8 text-xs text-ink-500 sm:flex-row">
-        <p>&copy; {{ year }} Garagenpark Marchtrenk. Alle Rechte vorbehalten.</p>
+        <p>&copy; {{ year }} garagen-reich. Alle Rechte vorbehalten.</p>
         <div class="flex gap-6">
           <NuxtLink to="/impressum" class="hover:text-ink-900">Impressum</NuxtLink>
           <NuxtLink to="/agb" class="hover:text-ink-900">AGB</NuxtLink>
           <NuxtLink to="/datenschutz" class="hover:text-ink-900">Datenschutz</NuxtLink>
+          <button type="button" class="hover:text-ink-900" @click="reopen">Cookie-Einstellungen</button>
         </div>
       </div>
     </div>

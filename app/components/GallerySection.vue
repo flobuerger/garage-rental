@@ -1,9 +1,9 @@
 <script setup lang="ts">
 const photos = [
-  { src: '/images/baustelle-05.jpg', label: 'Außenansicht Garagenpark', span: 'sm:row-span-2' },
-  { src: '/images/baustelle-01.jpg', label: 'Innenraum mit Elektroverteiler', span: '' },
-  { src: '/images/baustelle-02.jpg', label: 'Gebäudeecke, verputzt', span: '' },
-  { src: '/images/baustelle-03.jpg', label: 'Innenraum mit Deckenbeleuchtung', span: '' },
+  { src: '/images/baustelle-05.jpg', label: 'Außenansicht mit geöffneter Garage', span: 'sm:row-span-2' },
+  { src: '/images/baustelle-03.jpg', label: 'Verputzte Außenfassade', span: '' },
+  { src: '/images/baustelle-01.jpg', label: 'Innenraum mit LED-Beleuchtung', span: '' },
+  { src: '/images/baustelle-02.jpg', label: 'Innenwand und Torführung', span: '' },
   { src: '/images/baustelle-04.jpg', label: 'Blick durch das geöffnete Tor', span: 'sm:row-span-2' },
 ]
 

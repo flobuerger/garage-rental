@@ -7,7 +7,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Garagenpark Marchtrenk — Garagen mieten',
+      title: 'garagen-reich — Garagen mieten',
       htmlAttrs: { lang: 'de' },
       meta: [
         { charset: 'utf-8' },

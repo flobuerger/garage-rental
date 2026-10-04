@@ -18,7 +18,7 @@ const steps = [
 ]
 
 const { open } = useLightbox()
-const image = { src: '/images/baustelle-04.jpg', alt: 'Blick durch das geöffnete Garagentor in den Innenraum' }
+const image = { src: '/images/baustelle-04.jpg', alt: 'Blick durch das geöffnete Garagentor in den Innenraum mit LED-Spots' }
 </script>
 
 <template>

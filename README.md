@@ -1,4 +1,4 @@
-# Garagenpark Musterort — Website
+# garagen-reich — Website
 
 Moderne Nuxt 4 + Tailwind CSS 4 Website für eine Garagenvermietung, mit Startseite, Preise-Seite, Foto-Galerie, Video-Rundgang und Geländeplan.
 

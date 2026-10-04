@@ -27,7 +27,7 @@ watch(
             </svg>
           </span>
           <span class="font-heading text-sm font-bold uppercase tracking-[0.1em] text-ink-900">
-            Garagenpark Marchtrenk
+            garagen-reich
           </span>
         </NuxtLink>
 

@@ -1,12 +1,12 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Preise — Garagenpark Marchtrenk',
+  title: 'Preise — garagen-reich',
   description:
     'Transparente Monatsmiete für die Einzelgarage in Marchtrenk, inkl. Betriebskosten. Faire, klar aufgeschlüsselte Konditionen.',
 })
 
 const { open: openLightbox } = useLightbox()
-const contactImage = { src: '/images/baustelle-03.jpg', alt: 'Garagen-Innenraum mit Deckenbeleuchtung' }
+const contactImage = { src: '/images/baustelle-01.jpg', alt: 'Garageninnenraum mit LED-Beleuchtung' }
 
 const monthly = [
   { label: 'Miete', value: '€ 149,00', note: 'inkl. 20 % USt.' },
@@ -170,7 +170,7 @@ function handleSubmit() {
           <h2 class="mt-3 text-2xl font-bold text-ink-900">Direkt erreichbar</h2>
 
           <div class="mt-6 space-y-4">
-            <a href="mailto:info@garagenpark-marchtrenk.at" class="flex items-center gap-3 text-sm text-ink-700 hover:text-ink-900">
+            <a href="mailto:office@garagen-reich.at" class="flex items-center gap-3 text-sm text-ink-700 hover:text-ink-900">
               <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-ink-900 text-brand-500">
                 <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -178,10 +178,10 @@ function handleSubmit() {
               </span>
               <span>
                 <span class="block text-xs text-ink-500">E-Mail schreiben</span>
-                info@garagenpark-marchtrenk.at
+                office@garagen-reich.at
               </span>
             </a>
-            <a href="tel:+43000000000" class="flex items-center gap-3 text-sm text-ink-700 hover:text-ink-900">
+            <a href="tel:+4367763475223" class="flex items-center gap-3 text-sm text-ink-700 hover:text-ink-900">
               <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-ink-900 text-brand-500">
                 <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -189,7 +189,7 @@ function handleSubmit() {
               </span>
               <span>
                 <span class="block text-xs text-ink-500">Anrufen</span>
-                +43 000 000 000
+                +43 677 63475223
               </span>
             </a>
           </div>

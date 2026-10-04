@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const mapEmbedSrc =
   'https://www.openstreetmap.org/export/embed.html?bbox=14.1116%2C48.1894%2C14.1316%2C48.2054&layer=mapnik&marker=48.1974%2C14.1216'
+const { externalMedia, save } = useConsent()
 const mapLinkHref = 'https://www.openstreetmap.org/?mlat=48.1974&mlon=14.1216#map=16/48.1974/14.1216'
 </script>
 
@@ -18,9 +19,19 @@ const mapLinkHref = 'https://www.openstreetmap.org/?mlat=48.1974&mlon=14.1216#ma
 
     <div class="mt-12 mx-auto max-w-3xl">
       <div class="relative overflow-hidden rounded-lg border border-ink-900/8 shadow-card">
+        <div
+          v-if="!externalMedia"
+          class="flex h-[380px] w-full flex-col items-center justify-center gap-4 bg-ink-50 px-6 text-center sm:h-[440px]"
+        >
+          <p class="max-w-sm text-sm text-ink-600">
+            Die Karte wird von OpenStreetMap geladen. Dabei wird deine IP-Adresse an den Anbieter übertragen.
+          </p>
+          <button type="button" class="btn-primary" @click="save('all')">Karte laden</button>
+        </div>
         <iframe
+          v-else
           :src="mapEmbedSrc"
-          title="Standort Garagenpark Marchtrenk auf OpenStreetMap"
+          title="Standort garagen-reich in Marchtrenk auf OpenStreetMap"
           class="h-[380px] w-full sm:h-[440px]"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
@@ -33,7 +44,7 @@ const mapLinkHref = 'https://www.openstreetmap.org/?mlat=48.1974&mlon=14.1216#ma
             </svg>
           </span>
           <span class="font-heading text-[11px] font-bold uppercase tracking-wide text-ink-900">
-            Garagenpark Marchtrenk
+            garagen-reich
           </span>
         </div>
       </div>

@@ -6,5 +6,6 @@
     </main>
     <TheFooter />
     <ImageLightbox />
+    <CookieBanner />
   </div>
 </template>

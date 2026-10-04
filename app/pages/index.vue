@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Garagenpark Marchtrenk — Garage sicher mieten',
+  title: 'garagen-reich — Garage sicher mieten',
   description:
     'Trockene, videoüberwachte Einzelgarage in Marchtrenk, Zufahrt durch Schranken gesichert. Sofort verfügbar.',
 })
