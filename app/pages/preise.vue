@@ -5,6 +5,9 @@ useSeoMeta({
     'Transparente Monatsmiete für die Einzelgarage in Marchtrenk, inkl. Betriebskosten. Faire, klar aufgeschlüsselte Konditionen.',
 })
 
+const { open: openLightbox } = useLightbox()
+const contactImage = { src: '/images/baustelle-03.jpg', alt: 'Garagen-Innenraum mit Deckenbeleuchtung' }
+
 const monthly = [
   { label: 'Miete', value: '€ 149,00', note: 'inkl. 20 % USt.' },
   { label: 'Stromkosten lt. Verbrauch', value: '€ 10,00', note: 'mtl. Vorauszahlung, inkl. 20 % USt.' },
@@ -150,13 +153,18 @@ function handleSubmit() {
     <section id="kontakt" class="mx-auto max-w-7xl scroll-mt-24 px-4 pb-24 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 gap-10 lg:grid-cols-5 lg:gap-12">
         <div class="lg:col-span-2">
-          <div class="overflow-hidden rounded-lg border border-ink-900/8 shadow-card">
+          <button
+            type="button"
+            class="block w-full cursor-zoom-in overflow-hidden rounded-lg border border-ink-900/8 shadow-card"
+            aria-label="Garagen-Innenraum vergrößern"
+            @click="openLightbox([contactImage])"
+          >
             <img
-              src="https://images.unsplash.com/photo-1617917142884-402d396a50aa?q=80&w=1000&auto=format&fit=crop"
-              alt="Heller, aufgeräumter Garagen-Innenraum"
-              class="aspect-[4/3] w-full object-cover"
+              :src="contactImage.src"
+              :alt="contactImage.alt"
+              class="aspect-[3/4] w-full object-cover"
             />
-          </div>
+          </button>
 
           <span class="eyebrow mt-8"><span class="eyebrow-index">04</span> Kontakt</span>
           <h2 class="mt-3 text-2xl font-bold text-ink-900">Direkt erreichbar</h2>

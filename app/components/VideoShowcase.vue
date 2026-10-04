@@ -18,7 +18,7 @@ function togglePlay() {
   <section id="video" class="mx-auto max-w-7xl scroll-mt-24 px-4 py-24 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
       <div>
-        <span class="eyebrow"><span class="eyebrow-index">06</span> Video-Rundgang</span>
+        <span class="eyebrow"><span class="eyebrow-index">05</span> Video-Rundgang</span>
         <h2 class="mt-3 text-3xl font-bold tracking-tight text-ink-900 sm:text-4xl">
           Wirf einen Blick hinein
         </h2>

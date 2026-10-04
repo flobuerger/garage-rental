@@ -1,7 +1,7 @@
 <template>
   <section class="bg-ink-950">
     <div class="mx-auto max-w-3xl px-4 py-24 text-center sm:px-6 lg:px-8">
-      <span class="eyebrow justify-center text-ink-400"><span class="eyebrow-index">05</span> Kontakt</span>
+      <span class="eyebrow justify-center text-ink-400"><span class="eyebrow-index">07</span> Kontakt</span>
       <h2 class="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
         Bereit für deine eigene Garage?
       </h2>

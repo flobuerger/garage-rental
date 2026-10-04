@@ -16,19 +16,27 @@ const steps = [
     desc: 'Schlüsselübergabe und sofort einziehen.',
   },
 ]
+
+const { open } = useLightbox()
+const image = { src: '/images/baustelle-04.jpg', alt: 'Blick durch das geöffnete Garagentor in den Innenraum' }
 </script>
 
 <template>
   <section class="bg-ink-50">
     <div class="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
-        <div class="overflow-hidden rounded-lg border border-ink-900/8 shadow-card">
+        <button
+          type="button"
+          class="block cursor-zoom-in overflow-hidden rounded-lg border border-ink-900/8 shadow-card"
+          :aria-label="`${image.alt} vergrößern`"
+          @click="open([image])"
+        >
           <img
-            src="https://images.unsplash.com/photo-1586582636676-9ca2d4cedb9a?q=80&w=1400&auto=format&fit=crop"
-            alt="Übergabe der Garage — zwei Personen besprechen die Schlüsselübergabe"
-            class="aspect-[4/3] w-full object-cover"
+            :src="image.src"
+            :alt="image.alt"
+            class="aspect-[3/4] w-full object-cover sm:aspect-[4/5]"
           />
-        </div>
+        </button>
 
         <div>
           <span class="eyebrow"><span class="eyebrow-index">03</span> So funktioniert's</span>

@@ -7,7 +7,7 @@ const mapLinkHref = 'https://www.openstreetmap.org/?mlat=48.1974&mlon=14.1216#ma
 <template>
   <section id="lageplan" class="mx-auto max-w-7xl scroll-mt-24 px-4 py-24 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-2xl text-center">
-      <span class="eyebrow justify-center"><span class="eyebrow-index">04</span> Lageplan</span>
+      <span class="eyebrow justify-center"><span class="eyebrow-index">06</span> Lageplan</span>
       <h2 class="mt-3 text-3xl font-bold tracking-tight text-ink-900 sm:text-4xl">
         So findest du zu uns
       </h2>

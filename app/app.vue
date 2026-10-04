@@ -5,5 +5,6 @@
       <NuxtPage />
     </main>
     <TheFooter />
+    <ImageLightbox />
   </div>
 </template>

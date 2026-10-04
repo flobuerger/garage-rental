@@ -6,12 +6,15 @@ const photos = [
   { src: '/images/baustelle-03.jpg', label: 'Innenraum mit Deckenbeleuchtung', span: '' },
   { src: '/images/baustelle-04.jpg', label: 'Blick durch das geöffnete Tor', span: 'sm:row-span-2' },
 ]
+
+const { open } = useLightbox()
+const lightboxImages = photos.map((p) => ({ src: p.src, alt: p.label }))
 </script>
 
 <template>
   <section id="galerie" class="mx-auto max-w-7xl scroll-mt-24 px-4 py-24 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-2xl text-center">
-      <span class="eyebrow justify-center"><span class="eyebrow-index">05</span> Impressionen</span>
+      <span class="eyebrow justify-center"><span class="eyebrow-index">04</span> Impressionen</span>
       <h2 class="mt-3 text-3xl font-bold tracking-tight text-ink-900 sm:text-4xl">Die Anlage im Überblick</h2>
       <p class="mt-4 text-ink-500">
         Erste Eindrücke von der im Bau befindlichen Anlage. Weitere Fotos folgen, sobald sie fertiggestellt ist.
@@ -20,10 +23,15 @@ const photos = [
 
     <div class="mt-14 grid auto-rows-[180px] grid-cols-2 gap-4 sm:auto-rows-[200px] sm:grid-cols-3">
       <figure
-        v-for="photo in photos"
+        v-for="(photo, i) in photos"
         :key="photo.src"
-        class="group relative overflow-hidden rounded-lg border border-ink-900/8"
+        class="group relative cursor-zoom-in overflow-hidden rounded-lg border border-ink-900/8"
         :class="photo.span"
+        role="button"
+        tabindex="0"
+        :aria-label="`${photo.label} vergrößern`"
+        @click="open(lightboxImages, i)"
+        @keydown.enter="open(lightboxImages, i)"
       >
         <img
           :src="photo.src"

@@ -12,10 +12,8 @@ useSeoMeta({
     <SizeGuideSection />
     <FeatureGrid />
     <StepsSection />
-    <!-- Galerie und Video-Rundgang: ausgeblendet bis die Anlage fertiggestellt ist.
-         Inhalte sind bereits mit echten Fotos/Video befüllt, nur hier auskommentiert. -->
-    <!-- <GallerySection /> -->
-    <!-- <VideoShowcase /> -->
+    <GallerySection />
+    <VideoShowcase />
     <SitePlanSection />
     <CtaBanner />
   </div>

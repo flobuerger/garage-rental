@@ -1,3 +1,14 @@
+<script setup lang="ts">
+const videoEl = ref<HTMLVideoElement | null>(null)
+const isMuted = ref(true)
+
+function toggleMute() {
+  if (!videoEl.value) return
+  videoEl.value.muted = !videoEl.value.muted
+  isMuted.value = videoEl.value.muted
+}
+</script>
+
 <template>
   <section class="relative overflow-hidden bg-white">
     <div class="relative mx-auto max-w-7xl px-4 pb-20 pt-16 sm:px-6 sm:pt-20 lg:px-8">
@@ -45,17 +56,34 @@
         </div>
 
         <div class="relative">
-          <div class="overflow-hidden rounded-lg border border-ink-900/8 shadow-card-hover">
+          <div class="group relative overflow-hidden rounded-lg border border-ink-900/8 shadow-card-hover">
             <video
-              class="aspect-[4/5] w-full object-cover sm:aspect-[5/6]"
+              ref="videoEl"
+              class="aspect-[4/3] w-full object-cover"
               autoplay
               loop
               muted
               playsinline
-              poster="https://images.unsplash.com/photo-1763663196513-0bede0ca52dc?q=80&w=1400&auto=format&fit=crop"
+              poster="/images/baustelle-05.jpg"
             >
               <source src="/videos/hero.mp4" type="video/mp4" />
             </video>
+
+            <button
+              type="button"
+              class="absolute bottom-3 right-3 flex h-9 w-9 items-center justify-center rounded-full bg-ink-950/60 text-white backdrop-blur transition hover:bg-ink-950/80"
+              :aria-label="isMuted ? 'Ton einschalten' : 'Ton ausschalten'"
+              @click="toggleMute"
+            >
+              <svg v-if="isMuted" viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11 5 6 9H3v6h3l5 4V5Z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="m16 9 5 6m0-6-5 6" />
+              </svg>
+              <svg v-else viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11 5 6 9H3v6h3l5 4V5Z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.5 8.5a5 5 0 0 1 0 7M18 6a8.5 8.5 0 0 1 0 12" />
+              </svg>
+            </button>
           </div>
 
           <div class="absolute -bottom-6 -left-6 hidden rounded-lg border border-ink-900/8 bg-white p-4 shadow-card-hover sm:flex sm:items-center sm:gap-3">
