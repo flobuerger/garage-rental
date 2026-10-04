@@ -1,6 +1,6 @@
 # garagen-reich — Website
 
-Moderne Nuxt 4 + Tailwind CSS 4 Website für eine Garagenvermietung, mit Startseite, Preise-Seite, Foto-Galerie, Video-Rundgang und Geländeplan.
+Moderne Nuxt 4 + Tailwind CSS 4 Website für eine Garagenvermietung, mit Startseite, Preis-Seite, Foto-Galerie, Video-Rundgang und Geländeplan.
 
 ## Setup
 
@@ -29,7 +29,7 @@ npm run preview
 ## Struktur
 
 - `app/pages/index.vue` — Startseite (Hero, Features, Galerie, Video, Lageplan, CTA)
-- `app/pages/preise.vue` — Preise (reine Infodarstellung, nicht auswählbar), FAQ, Kontaktformular
+- `app/pages/preise.vue` — Preis (reine Infodarstellung, nicht auswählbar), FAQ, Kontaktformular
 - `app/pages/impressum.vue`, `app/pages/datenschutz.vue`, `app/pages/agb.vue` — Rechts-Platzhalterseiten
 - `app/components/` — wiederverwendbare Sektionen
 - `public/images/` — Platzhalter-SVGs (Galerie & Geländeplan)

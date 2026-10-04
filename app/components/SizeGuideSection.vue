@@ -2,7 +2,7 @@
 const facts = [
   { label: 'Innenmaße [L×B×H]', value: '5,84 × 2,84 × 2,14 m' },
   { label: 'Fläche', value: 'ca. 16,5 m²' },
-  { label: 'Stromanschluss', value: 'Eigener Subzähler je Garage' },
+  { label: 'Stromanschluss', value: 'Eigener Subzähler' },
   { label: 'Steckdosen', value: '3 je Garage' },
   { label: 'Beleuchtung', value: 'LED-Lampe mit Lichtschalter' },
 ]
@@ -23,8 +23,7 @@ const rental = [
         Einzelgarage
       </h2>
       <p class="mt-4 text-ink-500">
-        Eine einheitliche Größe für alle Stellplätze — durchdacht ausgestattet
-        und fair kalkuliert.
+        Eine Garagengröße — durchdacht ausgestattet und fair kalkuliert.
       </p>
     </div>
 

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Preise — garagen-reich',
+  title: 'Preis — garagen-reich',
   description:
     'Transparente Monatsmiete für die Einzelgarage in Marchtrenk, inkl. Betriebskosten. Faire, klar aufgeschlüsselte Konditionen.',
 })
@@ -28,8 +28,8 @@ const extras = [
 
 const faqs = [
   {
-    q: 'Sind die Preise inklusive Mehrwertsteuer?',
-    a: 'Ja, alle ausgewiesenen Preise enthalten die gesetzliche Mehrwertsteuer von 20 %.',
+    q: 'Ist der Preis inklusive Mehrwertsteuer?',
+    a: 'Ja, der ausgewiesene Preis enthält die gesetzliche Mehrwertsteuer von 20 %.',
   },
   {
     q: 'Wie lange ist die Mindestvertragslaufzeit?',
@@ -45,7 +45,7 @@ const faqs = [
   },
   {
     q: 'Was ist mit dem Stromanschluss?',
-    a: 'Jede Garage hat einen eigenen Subzähler — ideal auch zum Laden deines E-Autos. Die Stromkosten werden monatlich mit € 10,00 vorausbezahlt und nach Verbrauch abgerechnet.',
+    a: 'Die Garage hat einen eigenen Subzähler — ideal auch zum Laden deines E-Autos. Die Stromkosten werden monatlich mit € 10,00 vorausbezahlt und nach Verbrauch abgerechnet.',
   },
 ]
 
@@ -61,9 +61,9 @@ function handleSubmit() {
   <div>
     <section class="mx-auto max-w-7xl px-4 pb-4 pt-16 sm:px-6 lg:px-8">
       <div class="mx-auto max-w-2xl text-center">
-        <span class="eyebrow justify-center"><span class="eyebrow-index">01</span> Preise</span>
+        <span class="eyebrow justify-center"><span class="eyebrow-index">01</span> Preis</span>
         <h1 class="mt-3 text-4xl font-bold tracking-tight text-ink-900 sm:text-5xl">
-          Faire Mieten, klar kalkuliert
+          Fairer Preis, klar kalkuliert
         </h1>
         <p class="mt-4 text-ink-500">
           Eine Garage, klar kalkuliert — inklusive Betriebskosten, ohne versteckte Zusatzkosten.

@@ -4,7 +4,7 @@ const open = ref(false)
 const links = [
   { label: 'Start', to: '/' },
   { label: 'Lageplan', to: '/#lageplan' },
-  { label: 'Preise', to: '/preise' },
+  { label: 'Preis', to: '/preise' },
 ]
 
 const route = useRoute()

@@ -26,7 +26,7 @@ function toggleMute() {
           </h1>
 
           <p class="mt-6 max-w-lg text-lg leading-relaxed text-ink-500">
-            Trockene, videoüberwachte Garagenstellplätze mit ebenerdiger Zufahrt,
+            Eine trockene, videoüberwachte Garage mit ebenerdiger Zufahrt,
             durch Schranken gesichert. Reservieren, einziehen, fertig.
           </p>
 

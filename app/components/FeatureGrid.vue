@@ -12,17 +12,17 @@ const features = [
   },
   {
     title: 'Trocken & sauber',
-    desc: 'Gepflegte, trockene Garagen — ideal auch für Motorräder, Reifen oder Lagerung.',
+    desc: 'Eine gepflegte, trockene Garage — ideal auch für Motorräder, Reifen oder Lagerung.',
     icon: 'M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z',
   },
   {
-    title: 'Faire Preise',
-    desc: 'Transparente Monatsmieten ohne versteckte Kosten — Kaution inklusive.',
+    title: 'Fairer Preis',
+    desc: 'Transparente Monatsmiete ohne versteckte Kosten.',
     icon: 'M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V6m0 10v2m0-2c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z',
   },
   {
     title: 'Eigener Subzähler',
-    desc: 'Jede Garage mit eigenem Stromsubzähler — transparent nach Verbrauch abgerechnet.',
+    desc: 'Die Garage mit eigenem Stromsubzähler — transparent nach Verbrauch abgerechnet.',
     icon: 'M13 10V3L4 14h7v7l9-11h-7z',
   },
   {

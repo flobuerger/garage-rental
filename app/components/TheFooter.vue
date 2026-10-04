@@ -18,7 +18,7 @@ const { reopen } = useConsent()
             <span class="font-heading text-sm font-bold uppercase tracking-[0.1em] text-ink-900">garagen-reich</span>
           </div>
           <p class="mt-4 max-w-sm text-sm leading-relaxed text-ink-500">
-            Zur Miete in Marchtrenk. Einheitliche Größe, faire Miete inklusive Betriebskosten —
+            Zur Miete in Marchtrenk. Faire Miete inklusive Betriebskosten —
             unkompliziert online reservieren.
           </p>
 
@@ -36,7 +36,7 @@ const { reopen } = useConsent()
           <ul class="mt-4 space-y-2.5 text-sm text-ink-500">
             <li><NuxtLink to="/" class="hover:text-ink-900">Startseite</NuxtLink></li>
             <li><NuxtLink to="/#lageplan" class="hover:text-ink-900">Lageplan</NuxtLink></li>
-            <li><NuxtLink to="/preise" class="hover:text-ink-900">Preise</NuxtLink></li>
+            <li><NuxtLink to="/preise" class="hover:text-ink-900">Preis</NuxtLink></li>
           </ul>
         </div>
 
